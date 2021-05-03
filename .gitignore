@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+src/.depend
+src/.DS_Store
+.vscode/settings.json
+.vscode/c_cpp_properties.json
