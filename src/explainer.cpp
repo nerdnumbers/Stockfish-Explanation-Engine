@@ -41,6 +41,7 @@ namespace Stockfish
   void Explainer::explain_piece(string &s)
   {
     sync_cout << "Explaining a piece!" << sync_endl;
+    sync_cout << position_ << sync_endl;
   }
 
   vector<Stockfish::Square> Explainer::squares_from_bb(Stockfish::Bitboard bb)
@@ -107,10 +108,10 @@ namespace Stockfish
       }
 
       // Show attacks as positive, defenses as negative.
-      int threatLevelParity = -1;
+      int threatLevelParity = 1;
       if (squareColor == position_.side_to_move())
       {
-        threatLevelParity = 1;
+        threatLevelParity = -1;
       }
 
       Stockfish::Bitboard allThreats = position_.attackers_to(square);
