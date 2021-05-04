@@ -34,3 +34,6 @@ src/.depend
 src/.DS_Store
 .vscode/settings.json
 .vscode/c_cpp_properties.json
+*.tmp
+src/nn-62ef826d1a6d.nnue
+src/stockfish
