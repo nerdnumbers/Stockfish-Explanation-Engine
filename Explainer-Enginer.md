@@ -46,19 +46,6 @@ simply examines how much value is gained/lost by exchanging until a "weaker"
 defender holds off the attack (e.g. a piece is guarded by a pawn) or until
 defenders are exhausted. The total value returned is the value of lost pieces.
 
-# Random Quickfixes
-
-Given the time scale of this project and the admitted rustiness I have in C++
-as well as the pretty large domain knowledge base in both Chess Engines
-and Stockfish, there are some workarounds or places I can see for obvious
-improvement in my solution. I'll keep track of these here.
-
-## Position.h
-
-I am not 100% of the optimization gained by preventing any copying of the
-Position object. However, to allow my Explainer Class to easily store a
-position, I've temporarily removed it.
-
 # Useful Positions
 
 FEN of hung bishop
